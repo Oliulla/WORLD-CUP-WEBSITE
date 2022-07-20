@@ -1,0 +1,80 @@
+/* My custom property/ variables */
+:root {
+    --primary-text-color: #FFFFFF;
+    --secondary-text-color: #161616;
+
+    --btn-active-bg-color: #DD0000;
+
+    --primary-font-size: 16px;
+}
+
+/* Change active button for upcomming section start */
+.menu-btn:last-child {
+    background-color: var(--primary-text-color);
+}
+
+.menu-btn:last-child a{
+    color: var(--secondary-text-color);
+}
+
+.menu-btn:first-child {
+    background-color: var(--btn-active-bg-color);
+}
+
+.menu-btn:first-child a{
+    color: var(--primary-text-color);
+}
+/* Change active button for upcomming section end */
+
+/* upcomming match section styling start */
+.match-container {
+    display: grid;
+    grid-template-columns: repeat(3, 312px);
+    grid-template-rows: repeat(2, 242px);
+    gap: 24px;
+}
+
+.country-play {
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.teams {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 53px 0 20px 0;
+
+}
+
+.teams img {
+    width: 93px;
+    height: 54px;
+}
+
+
+/* Media for upcomming match */
+/* For Mobile device and small devices */
+@media screen and (max-width: 767px) {
+    .match-container {
+        grid-template-columns: repeat(1, 312px);
+        grid-template-rows: repeat(6, 242px);
+        justify-content: center;
+        grid-row-gap: 12px;
+    }
+
+}
+
+
+/* Media for upcomming match */
+/* For Tablet device or medium devices */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .match-container {
+        grid-template-columns: repeat(2, 312px);
+        grid-template-rows: repeat(3, 242px);
+        justify-content: flex-start;
+        gap: 16px;
+    }
+}

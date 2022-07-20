@@ -19,6 +19,7 @@ body {
     max-width: 1600px;
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 /* Header styling start */
@@ -307,7 +308,7 @@ main {
 }
 /* Footer styling end */
 
-/* For Mobile device or small devices */
+/* For Mobile device and small devices */
 @media screen and (max-width: 767px) {
     .header {
         width: 334px;

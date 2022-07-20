@@ -1,0 +1,95 @@
+/* My custom property/ variables */
+:root {
+    --primary-text-color: #FFFFFF;
+    --secondary-text-color: #161616;
+
+    --btn-active-bg-color: #DD0000;
+
+    --primary-font-size: 16px;
+}
+
+/* Change active button for groups page start */
+.menu-btn:nth-child(2) {
+    background-color: var(--btn-active-bg-color);
+}
+
+.menu-btn:nth-child(2) a{
+    color: var(--primary-text-color);
+}
+
+.menu-btn:nth-child(odd) {
+    background-color: var(--primary-text-color);
+}
+
+.menu-btn:nth-child(odd) a{
+    color: var(--secondary-text-color);
+
+}
+/* Change active button for groups page end */
+
+/* Groups styling start */
+.groups {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    padding: 10px 5px;
+}
+
+.groups-info {
+    padding: 20px 5px;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.19), 0 0 2px 1px rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+    background-color: #fffaaa;
+}
+
+.group-detail {
+    display: flex;
+    align-items: center;
+    background-color: #EEEEE4;
+    color: #000049;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 4px 0;
+}
+
+.group-detail span {
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+.group-detail img {
+    padding-top: 6px;
+    width: 35px;
+    height: 30px;
+}
+
+/* Groups styling end */
+
+
+/* Media for groups team */
+/* For Mobile device and small devices */
+@media screen and (max-width: 767px) {
+    .groups {
+        grid-template-columns: repeat(1, 312px);
+        grid-template-rows: repeat(8, 242px);
+        justify-content: center;
+        grid-row-gap: 12px;
+    }
+
+    .groups-title {
+        text-align: center;
+    }
+
+}
+
+
+/* Media for groups team */
+/* For Tablet device or medium devices */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .groups {
+        grid-template-columns: repeat(2, 312px);
+        grid-template-rows: repeat(4, 242px);
+        justify-content: flex-start;
+        gap: 16px;
+    }
+}
